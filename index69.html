@@ -7,17 +7,25 @@
   <title>Пример скрипта</title>
   <script >
      
-      function winClose() {
-          open();
-          close();  
+      function open() {
+          open("https://htmlpreview.github.io/?https://github.com/vadimPetru/js_practice/blob/master/12.htm");
+           }
+      function closeIt(params) {
+        close();  
       }
+          
+     
      
   </script>
 </head>
 <body>
     <br>
     <form style="text-align:center;">
-    <input type="button" value="Сейчас мы закроем это окно!" onClick="winClose();"></input>
+    <input type="button" value="Сейчас мы закроем это окно!" onClick="open();"></input>
+    </form>
+    <br>
+    <form style="text-align:center;">
+      <input type="button" value="Сейчас мы закроем это окно!" onClick="closeIt();"></input>
     </form>
 </body>
 </html>
