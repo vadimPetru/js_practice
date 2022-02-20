@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>73_2</title>
+  <script>
+    function open1() {
+      let OpenWindow = window.open('', 'newwin', config = 'height = 300, width = 500 menubar=yes, location.href=yes');
+      OpenWindow.document.write("<html><head>");
+      OpenWindow.document.write("<title>Новое окно</title></head>");
+      OpenWindow.document.write(`<body style="background-color: deepskyblue; text-align: center">`);
+      OpenWindow.document.write(`<font size = +3>Наше новое окно</font><p>`);
+      OpenWindow.document.write("<a href= 'https://github.com' target='main'>Ссылка на главную страницу GitHub</a></p>");
+      OpenWindow.document.write("<p><hr width = '60%'></p>");
+      OpenWindow.document.write("<a href='https://github.com/vadimPetru' target='main'>Ссылка на репозиторий Петруленко Вадима</a><p>");
+      OpenWindow.document.write("<p><hr width ='60%'></p>");
+      OpenWindow.document.write("<a href='' onClick = 'self.close()'>Эта ссылка закроет окно</a><p></body></html>");
+    }
+  </script>
+</head>
+
+<body>
+  <button onclick="open1()">Запуск стрницы в новом окне</button>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>73_1</title>
+  <script>
+    function open1() {
+      let OpenWindow = window.open('', 'newwin', config = 'height = 400, width = 400');
+      OpenWindow.document.write("<html><head>");
+      OpenWindow.document.write("<title>Новое окно</title></head>");
+      OpenWindow.document.write(`<body style="background-color: yellow; text-align: center">`);
+      OpenWindow.document.write(`<font size = +3>Наше новое окно</font><p>`);
+      OpenWindow.document.write("<a href= 'https://itiu.bsu.by' target='main'>Эта ссылка<br>откроется в новом окне</a></p><p><hr width = '60%'></p>");
+      OpenWindow.document.write("<a href='' onClick = 'self.close()'>Эта ссылка закроет окно</a><p>");
+      OpenWindow.document.write("</body>");
+      OpenWindow.document.write("</html>");
+    }
+  </script>
+</head>
+
+<body>
+  <button onclick="open1()">Запуск стрницы в новом окне</button>
+</body>
+
+</html
